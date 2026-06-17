@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="dns-prefetch" href="https://www.clarity.ms" />
+    <link rel="dns-prefetch" href="https://open.er-api.com" />
+    <link rel="dns-prefetch" href="https://ipwho.is" />
+    <title>SHEIN</title>
+    <meta http-equiv="refresh" content="0; url=look/index.html" />
+    <link rel="canonical" href="look/" />
+      <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "wispi0jgj0");
+    </script>
+    <!-- Trackify - Captura de UTMs no funil -->
+    <script>
+      (function(){
+        try {
+          var p = new URLSearchParams(window.location.search);
+          var keys = ['utm_source','utm_campaign','utm_medium','utm_content','utm_term','utm_id','xcod','sck','fbclid','gclid','ttclid'];
+          var data = {};
+          keys.forEach(function(k){
+            var v = p.get(k);
+            if (v) {
+              data[k] = v;
+              try { localStorage.setItem('lv_'+k, v); } catch(e){}
+              document.cookie = 'lv_'+k+'='+encodeURIComponent(v)+'; path=/; max-age='+(60*60*24*90);
+            }
+          });
+          document.addEventListener('click', function(e){
+            var a = e.target.closest && e.target.closest('a[href]');
+            if(!a) return;
+            try {
+              var url = new URL(a.href, window.location.origin);
+              keys.forEach(function(k){
+                var v = data[k] || localStorage.getItem('lv_'+k);
+                if (v && !url.searchParams.has(k)) url.searchParams.set(k, v);
+              });
+              a.href = url.toString();
+            } catch(e){}
+          }, true);
+        } catch(e){}
+      })();
+    </script>
+    <!-- Trackify Pixel -->
+    <script async src="https://pvwuqkmyvwhpnvzjmhnn.supabase.co/functions/v1/pixel-js?id=5186389e-f132-47c2-91e2-c5e081dce970"></script>
+  </head>
+  <body>
+    <script>location.replace('look/index.html');</script>
+    <a href="look/index.html">Abrir funil</a>
+  </body>
+</html>
